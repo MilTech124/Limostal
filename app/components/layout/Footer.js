@@ -44,6 +44,7 @@ function Footer() {
                         <p>limostal.garaze@gmail.com</p>
                     </Link>              
                 </div>         
+                
             </div>
         </div>
     </div>
