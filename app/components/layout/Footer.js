@@ -8,9 +8,9 @@ function Footer() {
 
             {/* FIRST COLUMN */}
             <div className="flex flex-col max-w-lg gap-5 text-sm">
-                <Image src='/images/logo_poziom.png' width={566} height={137} />
+                <Image src='/images/logo_poziom.png' alt="logo" width={566} height={137} />
                 <div className="flex gap-5 pt-5">
-                    <Image src='/images/buss.svg' width={70} height={70} />
+                    <Image src='/images/buss.svg' alt="buss" width={70} height={70} />
                     <div className="flex flex-col gap-2">
                         <p>Nasi pracownicy dokonują DARMOWEGO MONTAŻU
                         naszych produktów po wskazaniu miejsca przez Klienta.</p>
@@ -21,10 +21,10 @@ function Footer() {
             
                 </div>
                 <div className="flex gap-10"> 
-                    <div className="flex items-center gap-2 hover:scale-105 transition-transform"><img className="w-10 h-10" src="/facebook.webp"/>Facebook</div>
-                    <div className="flex items-center gap-2 hover:scale-105 transition-transform"><img className="w-auto h-10" src="/sprzedajemy.png"/></div>
+                    <div className="flex items-center gap-2 hover:scale-105 transition-transform"><Image width={40} height={40} alt="face" className="w-10 h-10" src="/facebook.webp"/>Facebook</div>
+                    <div className="flex items-center gap-2 hover:scale-105 transition-transform"><Image width={40} height={40} alt="sprzedajemy" className="w-auto h-10" src="/sprzedajemy.png"/></div>
                 </div>
-                <Link className="flex items-center gap-2 pt-5 " href={"/polityka"}><Image src="/info.png" width={25} height={25}/> Polityka Prywatnosci</Link>
+                <Link className="flex items-center gap-2 pt-5 " href={"/polityka"}><Image src="/info.png"alt="info" width={25} height={25}/> Polityka Prywatnosci</Link>
             </div>
 
             {/* SECOND COLUMN */}
@@ -36,11 +36,11 @@ function Footer() {
             
                 <div className="text-white pt-10 font-semibold ">
                     <Link className="flex items-center gap-5 hover:scale-105 transition-transform" href={"tel:+48518812110"}>
-                        <Image src='/phone.webp' width={70} height={70} />
+                        <Image src='/phone.webp' alt="phone" width={70} height={70} />
                         <p>+48 518 812 110</p>
                     </Link>
                     <Link className="flex items-center gap-5 md:pt-5 hover:scale-105 transition-transform" href={"mailto:limostal.garaze@gmail.com"}>
-                        <Image src='/mail.webp' width={70} height={70} />
+                        <Image src='/mail.webp' width={70} alt="mail" height={70} />
                         <p>limostal.garaze@gmail.com</p>
                     </Link>              
                 </div>         

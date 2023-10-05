@@ -8,12 +8,12 @@ function About() {
       <div className="flex justify-between pt-10 md:gap-5 flex-wrap">
         <Image src="/images/garaz.webp" alt="img" width={757} height={341} className=" w-3/5 min-w-[250px] object-cover" />
         <ul className="flex flex-col gap-4">
-        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} />Garaże Blaszane </li>
-        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} />Garaże Blaszane z Bramą Segmentową</li>
-        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} />Garaże z Wiatą </li>
-        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} />Schowki Ogrodowe </li>
-        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} />Wiaty Śmietnikowe</li>
-        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} />Bramy Segmentowe </li>
+        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} alt="Garaże Blaszane " />Garaże Blaszane </li>
+        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} alt="Garaże Blaszane z Bramą Segmentową" />Garaże Blaszane z Bramą Segmentową</li>
+        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} alt="Garaże z Wiatą" />Garaże z Wiatą </li>
+        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} alt="Schowki Ogrodowe"/>Schowki Ogrodowe </li>
+        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} alt="Wiaty Śmietnikowe" />Wiaty Śmietnikowe</li>
+        <li className="flex items-center gap-2"><Image src="/images/sarrow.svg" width={40} height={40} alt="Bramy Segmentowe" />Bramy Segmentowe </li>
         </ul>
       </div>
     </div>
