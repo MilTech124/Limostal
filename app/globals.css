@@ -36,3 +36,32 @@
     height: 100%;
     object-fit: cover;
   }
+  
+  .my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+    gap: 2rem;
+
+  }
+  .my-masonry-grid_column {
+  
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    
+    margin-top: 2rem;
+    
+  }
+ 
+  .loading-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+  }

@@ -4,7 +4,7 @@ import Link from "next/link"
 function Footer() {
   return (
     <div className='bg-neutral-300 flex w-full md:px-20 px-5 py-5 md:py-20'>
-        <div className='flex w-full justify-between'>
+        <div className='flex w-full max-sm:flex-col justify-between'>
 
             {/* FIRST COLUMN */}
             <div className="flex flex-col max-w-lg gap-5 text-sm">
@@ -22,14 +22,14 @@ function Footer() {
                 </div>
                 <div className="flex gap-10"> 
                     <div className="flex items-center gap-2 hover:scale-105 transition-transform"><Image width={40} height={40} alt="face" className="w-10 h-10" src="/facebook.webp"/>Facebook</div>
-                    <div className="flex items-center gap-2 hover:scale-105 transition-transform"><Image width={40} height={40} alt="sprzedajemy" className="w-auto h-10" src="/sprzedajemy.png"/></div>
+                    <div className="flex items-center gap-2 hover:scale-105 transition-transform"><Image width={200} height={40} alt="sprzedajemy" className="w-auto h-10" src="/sprzedajemy.png"/></div>
                 </div>
                 <Link className="flex items-center gap-2 pt-5 " href={"/polityka"}><Image src="/info.png"alt="info" width={25} height={25}/> Polityka Prywatnosci</Link>
             </div>
 
             {/* SECOND COLUMN */}
             <div className="flex flex-col  items-center">
-                <div className="text-4xl text-white text-center">
+                <div className="md:text-4xl text-white text-center">
                     <p>Masz <span className="text-sky-500">pytanie?</span></p>
                     <p>Chcesz uzyskać <span className="text-sky-500">więcej informacji?</span></p>
                 </div>

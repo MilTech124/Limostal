@@ -12,7 +12,7 @@ function Header() {
       label: "Home",
     },
     {
-      link: "/oferta",
+      link: "/#oferta",
       label: "Oferta",
     },
     {
@@ -34,16 +34,15 @@ function Header() {
     { label: "Garaże z bramą segmentową", link: "/garaże-z-bramą-segmentową" },
     { label: "Garaże z wiatą", link: "/garaże-z-wiatą" },
     { label: "Schowki ogrodowe", link: "/schowki-ogrodowe" },
-    { label: "Wiaty śmietnikowe", link: "/wiaty-śmietnikowe" },
-    { label: "Bramy segmentowe", link: "/bramy-segmentowe" },
+    { label: "Wiaty śmietnikowe", link: "/wiaty-śmietnikowe" }  
   ];
   const [menu, setMenu] = useState(false);
   const [currentLink, setCurrentLink] = useState("Home");
 
   return (
     <header className="w-full relative top-0 z-50">
-      <div className="top-contact flex justify-end h-[45px] items-center">
-        <Link className="pr-5 hover:scale-105 transition-transform" href="https://www.facebook.com/profile.php?id=100090694156429">
+      <div className="top-contact flex justify-end h-[45px]  items-center">
+        <Link className="pr-5  hover:scale-105 transition-transform" href="https://www.facebook.com/profile.php?id=100090694156429">
           <Image
             src="/images/facebook.png"
             alt="facebook"
@@ -64,7 +63,7 @@ function Header() {
               width={25}
               height={25}
             />
-            <p className="px-5 self-center">Tel: 518 812 110</p>
+            <p className="px-5 max-sm:hidden self-center">Tel: 518 812 110</p>
           </Link>
           <Link
             className="flex hover:scale-105 transition-transform"
@@ -77,7 +76,7 @@ function Header() {
               width={25}
               height={25}
             />
-            <p className="px-5 self-center">limostal.garaze@gmail.com</p>
+            <p className="px-5 self-center max-sm:hidden">limostal.garaze@gmail.com</p>
           </Link>
         </div>
       </div>

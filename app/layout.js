@@ -14,9 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className + " relative"}  >
+      <body className={inter.className + " relative"}>
         <Header />
+
         {children}
+
         <Footer />
         <Colophon />
       </body>

@@ -74,7 +74,7 @@ function WayTo() {
             <div className="lg:pt-0  lg:w-[400px]"></div>
         </div>
         
-        <div className="flex flex-wrap justify-center max-sm:scale-50 max-sm:mt-[-650px]">
+        <div className="flex flex-wrap justify-center max-sm:scale-50 max-sm:mt-[-550px]">
             <div className="lg:pt-0  lg:w-[400px]"></div>   
             <div className="lg:-mt-20"><Circle image={circles.circle6.image}  title={circles.circle6.title} description={circles.circle6.description}/></div>  
             <div className="lg:pt-40"><Circle image={circles.circle7.image}  title={circles.circle7.title} description={circles.circle7.description}/></div>  
