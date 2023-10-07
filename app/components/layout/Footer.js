@@ -21,10 +21,10 @@ function Footer() {
             
                 </div>
                 <div className="flex gap-10"> 
-                    <div className="flex items-center gap-2 hover:scale-105 transition-transform"><Image width={40} height={40} alt="face" className="w-10 h-10" src="/facebook.webp"/>Facebook</div>
+                    <Link target="_blank" href="https://www.facebook.com/profile.php?id=100090694156429" className="flex items-center gap-2 hover:scale-105 transition-transform"><Image width={40} height={40} alt="face" className="w-10 h-10" src="/facebook.webp"/>Facebook</Link>
                     <div className="flex items-center gap-2 hover:scale-105 transition-transform"><Image width={200} height={40} alt="sprzedajemy" className="w-auto h-10" src="/sprzedajemy.png"/></div>
                 </div>
-                <Link className="flex items-center gap-2 pt-5 " href={"/polityka"}><Image src="/info.png"alt="info" width={25} height={25}/> Polityka Prywatnosci</Link>
+                <Link className="flex items-center gap-2 pt-5 " href={"/"}><Image src="/info.png"alt="info" width={25} height={25}/> Polityka Prywatnosci</Link>
             </div>
 
             {/* SECOND COLUMN */}

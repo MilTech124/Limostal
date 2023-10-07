@@ -27,7 +27,7 @@ function Preparation() {
       id="przygotowanie-podloza"
       className="md:py-10 py-5  bg-sky-500 flex flex-col items-center justify-center"
     >
-      <h2 className="mdtext-4xl text-2xl underline"> Przygotowanie podłoża</h2>
+      <h2 className="md:text-4xl text-2xl underline"> Przygotowanie podłoża</h2>
       <h3 className="text-xl text-white">Należy po stronie klienta</h3>
       <p className="text-white max-w-screen-lg py-5">
         Teren pod garaż musi być wyrównany i wypoziomowany. Preferowana jest

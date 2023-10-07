@@ -1,10 +1,20 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useSearchParams } from 'next/navigation'
 import Masonry from "react-masonry-css";
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 
+
 function Galeria({ data }) {
+  
+
+  const searchParams = useSearchParams()
+
+  const  value  = searchParams.get('value')
+
+  console.log(value);
+
   const breakpointColumnsObj = {
     default: 3,
     1100: 3,
@@ -20,11 +30,13 @@ function Galeria({ data }) {
     "Wiaty śmietnikowe",
   ];
 
-  const [active, setActive] = useState(garages[0]);
+  const [active, setActive] = useState(value || garages[0]);
+  console.log(active);
   const [urlImage, setUrlImage] = useState(null);
   const galeria = data[0].acf.photo_gallery;
 
   const [obecna, setObecna] = useState(galeria.garazeBlaszane[0]);
+
 
   const currentGallery = () => {
     if (active === garages[0]) {
@@ -44,8 +56,15 @@ function Galeria({ data }) {
     }
   };
   useEffect(() => {
-    currentGallery();
-  }, [active]);
+    currentGallery();   
+  }, [active,value]);
+
+  useEffect(() => {{
+    if(value){
+      setActive(value)
+    }
+  
+  }}, [value])
 
   console.log(galeria.garazeBlaszane[0]);
 

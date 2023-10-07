@@ -30,11 +30,11 @@ function Header() {
     },
   ];
   const garagesLinks = [
-    { label: "Garaże blaszane", link: "/garaże-blaszane" },
-    { label: "Garaże z bramą segmentową", link: "/garaże-z-bramą-segmentową" },
-    { label: "Garaże z wiatą", link: "/garaże-z-wiatą" },
-    { label: "Schowki ogrodowe", link: "/schowki-ogrodowe" },
-    { label: "Wiaty śmietnikowe", link: "/wiaty-śmietnikowe" }  
+    { label: "Garaże blaszane", link: `/galeria?value=${'Garaże Blaszane'}` },
+    { label: "Garaże z bramą segmentową", link: `/galeria?value=${'Garaże z bramą segmentową'}` },
+    { label: "Garaże z wiatą", link: `/galeria?value=${'Garaże z wiatą'}` },
+    { label: "Schowki ogrodowe", link: `/galeria?value=${'Schowki ogrodowe'}` },
+    { label: "Wiaty śmietnikowe", link: `/galeria?value=${'Wiaty śmietnikowe'}` }  
   ];
   const [menu, setMenu] = useState(false);
   const [currentLink, setCurrentLink] = useState("Home");
@@ -42,7 +42,7 @@ function Header() {
   return (
     <header className="w-full relative top-0 z-50">
       <div className="top-contact flex justify-end h-[45px]  items-center">
-        <Link className="pr-5  hover:scale-105 transition-transform" href="https://www.facebook.com/profile.php?id=100090694156429">
+        <Link target="_blank" className="pr-5  hover:scale-105 transition-transform" href="https://www.facebook.com/profile.php?id=100090694156429">
           <Image
             src="/images/facebook.png"
             alt="facebook"
@@ -131,7 +131,7 @@ function Header() {
           <>
             <span className="text-white text-center border-l-2"></span>
             <Link
-              className="text-white hover:text-blue-600 text-center  md:py-3"
+              className="text-white hover:text-blue-600 text-center  md:py-1"
               key={link.label}
               href={link.link}
             >

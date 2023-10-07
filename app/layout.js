@@ -13,12 +13,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html
+      lang="pl"
+      className="scroll-smooth"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <body className={inter.className + " relative"}>
         <Header />
-
         {children}
-
         <Footer />
         <Colophon />
       </body>
