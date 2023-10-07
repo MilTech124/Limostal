@@ -50,7 +50,7 @@ function Kolorystyka() {
         <div className="flex w-full max-w-screen-xl justify-between pt-5">
             {woodColors.map((color, index) => (
                 <div key={index} className="flex flex-col items-center justify-center ">
-                    <Image src={color.image} width={350} height={350} className="border-2 hover:border-4"/>
+                    <Image src={color.image} width={350} height={350} alt="colors" className="border-2 hover:border-4"/>
                     <p className="text-center  text-sky-400">{color.title}</p>
                 </div>
             ))}           
@@ -61,7 +61,7 @@ function Kolorystyka() {
         <div className="flex w-full flex-wrap max-w-screen-xl justify-between pt-5">
             {colors.map((color, index) => (
                 <div key={index} className="flex flex-col items-center justify-center w-1/4 ">
-                    <Image src={color.image} width={268} height={250} className="border-2  hover:border-4"/>
+                    <Image alt="colors" src={color.image} width={268} height={250} className="border-2  hover:border-4"/>
                     <p className="text-center  text-sky-400">{color.title}</p>
                 </div>
             ))}

@@ -17,8 +17,8 @@ function Preparation() {
     },{
       image:"/images/warto-wiedziec/pod_garaz.webp",
       title:"Słupy Fundamentowe",
-      content:`Rozwiązaniem pośrednim między wykonaniem pełnej wylewki a ustawieniem bloczków betonowych jest zainstalowanie garażu na słupach fundamentowych. Aby je wykopać, należy wywiercić wąskie otwory ziemne w rogach blaszaka – można użyć w tym celu świdra ręcznego. Szalunkiem mogą być drewniane słupy, pręty lub rury PCV.  
-      Głębokość fundamentów powinna zależeć od poziomu wód gruntowych. Aby sprawdzić, na jakiej głębokości znajdują się wody głębinowe, należy wstępnie wykopać ok. 30 – centymetrowy dołek i pozostawić na kilka godzin. Jeśli po odczekaniu okaże się, że w środku jest sucho, wówczas należy stopniowo pogłębiać otwór sprawdzając stopniowo, W bardziej zaawansowanej formie, niektórzy decydują się na wykonanie fundamentów zlokalizowanych na pełnym obwodzie garażu.`
+      content:`Rozwiązaniem pośrednim między wykonaniem pełnej wylewki a ustawieniem bloczków betonowych jest zainstalowanie garażu na słupach fundamentowych. Aby je wykopać, należy wywiercić wąskie otwory ziemne w rogach blaszaka  można użyć w tym celu świdra ręcznego. Szalunkiem mogą być drewniane słupy, pręty lub rury PCV.  
+      Głębokość fundamentów powinna zależeć od poziomu wód gruntowych. Aby sprawdzić, na jakiej głębokości znajdują się wody głębinowe, należy wstępnie wykopać ok. 30  centymetrowy dołek i pozostawić na kilka godzin. Jeśli po odczekaniu okaże się, że w środku jest sucho, wówczas należy stopniowo pogłębiać otwór sprawdzając stopniowo, W bardziej zaawansowanej formie, niektórzy decydują się na wykonanie fundamentów zlokalizowanych na pełnym obwodzie garażu.`
     }
   ];
 
@@ -33,7 +33,7 @@ function Preparation() {
         Teren pod garaż musi być wyrównany i wypoziomowany. Preferowana jest
         wylewka o powiększonych wymiarach o ok 20 cm. Możemy zamontować na
         kostce brukowej ale mocowanie jest wykonywane na odpowiedzialność
-        klienta, kostka nie jest fundamentem dlatego może "pracować" w wyniku
+        klienta, kostka nie jest fundamentem dlatego może pracować w wyniku
         czego bramy mogą po czasie się rozregulować i nie jest to objęte
         gwarancją. Więcej na temat przygotowania podłoża udzielimy
         telefonicznie.
@@ -42,7 +42,7 @@ function Preparation() {
       <div>
         <div className="flex flex-col gap-10 md:pt-10 text-white">
           {items.map((item, index) => (
-            <div className="flex max-w-screen-lg max-sm:items-center max-sm:p-2 max-sm:flex-col md:gap-10">
+            <div key={index} className="flex max-w-screen-lg max-sm:items-center max-sm:p-2 max-sm:flex-col md:gap-10">
               <Image src={item.image} width={300} height={300} alt={item.title}/>
               <div className="flex flex-col gap-2">
                 <h3 className="text-2xl">{item.title}</h3>
