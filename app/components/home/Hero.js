@@ -11,11 +11,11 @@ import Link from "next/link";
 
 function Hero() {
   const slides = [
-    "/images/hero/1.jpeg",
-    "/images/hero/2.jpeg",
-    "/images/hero/3.jpeg",
-    "/images/hero/4.jpeg",
-    "/images/hero/5.jpeg",
+    "/images/hero/1.jpg",
+    "/images/hero/2.jpg",
+    "/images/hero/3.jpg",
+    "/images/hero/4.jpg",
+    "/images/hero/5.jpg",
   ];
   return (
     <section className="hero">
