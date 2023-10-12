@@ -3,6 +3,7 @@ import HeroPages from '../components/home/HeroPages'
 import MontageSection from '../components/warto-wiedziec/TransportMontage'
 import Preparation from '../components/warto-wiedziec/Preparation'
 import Kolorystyka from '../components/warto-wiedziec/Kolorystyka'
+import GateType from '../components/warto-wiedziec/GateType'
 
 function page() {
 
@@ -17,11 +18,11 @@ function page() {
     {
       title:"Kolorystyka",
       path:"#kolorystyka"
+    },
+    {
+      title:"Jaką bramę garażową wybrać ?",
+      path:"#brama"
     }
-    // {
-    //   title:"Gwarancja",
-    //   path:"/gwarancja"
-    // }
   ]
 
   return (
@@ -41,6 +42,7 @@ function page() {
     <MontageSection/>
     <Preparation/>
     <Kolorystyka/>
+    <GateType/>
 
     </section>
   )

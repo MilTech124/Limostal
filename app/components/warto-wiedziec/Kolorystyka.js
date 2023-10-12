@@ -15,30 +15,51 @@ function Kolorystyka() {
     ]
   const  colors=[
         {
-            title: "Ciemna wiśnia",
+            title: "Ciemna wiśnia RAL 3005",
             image: "/images/ciemna-wisnia.png"
         },
         {
-            title: "Ciemny brąz",
+            title: "Ciemny brąz RAL 8017",
             image: "/images/ciemny-braz.png"
         },{
-            title: "Biały",
+            title: "Biały RAL 9010",
             image: "/images/bialy.png"
         },{
-            title: "Jasny brąz",
+            title: "Jasny brąz RAL 8004",
             image: "/images/jasny-braz.png"
         },{
             title: "Ocynk",
             image: "/images/ocynk.png"
         },{
-            title: "Piasek",
+            title: "Piasek RAL 1002",
             image: "/images/piasek.png"
         },{
-            title: "Ciemny grafit",
+            title: "Ciemny grafit RAL 7016",
             image: "/images/ciemny-grafit.png"
         },{
-            title: "Jasna wiśnia",
+            title: "Jasna wiśnia RAL 3011",
             image: "/images/jasna-wisnia.png"
+        },{
+            title: "Ciemny zielony RAL 3020",
+            image: "/images/ciemny-zielony.webp"
+        },{
+            title:"Niebieski RAL 5010",
+            image: "/images/niebieski.webp"
+        },{
+            title: "Ciemna wiśnia MAT/BTX 3005",
+            image: "/images/ciemna-wisnia-1.webp"
+        },{
+            title: "Ciemny brąz MAT/BTX 8017",
+            image: "/images/ciemny-braz-1.webp"
+        },{
+            title: "Ciemny Grafit MAT/BTX 7016",
+            image: "/images/ciemny-grafit-1.webp"
+        },{
+            title: "Czarny MAT/BTX 7700",
+            image: "/images/czarny.webp"
+        },{
+            title: "Ciemny zielony MAT/BTX 6020",
+            image: "/images/ciemny-zielony-1.webp"
         }
     ]
 
