@@ -15,7 +15,7 @@ function GateType() {
         </p>
 
         {/* BRAMA SEGMENTOWA */}
-        <div className="flex gap-5 pt-5">
+        <div className="flex gap-5 max-sm:flex-col pt-5">
           <Image
             src="/images/hero/4.jpg"
             width={500}
@@ -36,7 +36,7 @@ function GateType() {
         </div>
         {/* BRAMA SEGMENTOWA */}
         {/* BRAMA UCHYLNA */}
-        <div className="flex gap-5 md:pt-10 pt-5">
+        <div className="flex gap-5 max-sm:flex-col md:pt-10 pt-5">
           <Image
             src="/images/hero/6.jpeg"
             width={500}
