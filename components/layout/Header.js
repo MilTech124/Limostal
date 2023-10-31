@@ -12,7 +12,7 @@ function Header() {
       label: "Home",
     },
     {
-      link: "/oferta",
+      link: "/#oferta",
       label: "Oferta",
     },
     {
@@ -30,20 +30,19 @@ function Header() {
     },
   ];
   const garagesLinks = [
-    { label: "Garaże blaszane", link: "/garaże-blaszane" },
-    { label: "Garaże z bramą segmentową", link: "/garaże-z-bramą-segmentową" },
-    { label: "Garaże z wiatą", link: "/garaże-z-wiatą" },
-    { label: "Schowki ogrodowe", link: "/schowki-ogrodowe" },
-    { label: "Wiaty śmietnikowe", link: "/wiaty-śmietnikowe" },
-    { label: "Bramy segmentowe", link: "/bramy-segmentowe" },
+    { label: "Garaże blaszane", link: `/galeria?value=${'Garaże Blaszane'}` },
+    { label: "Garaże z bramą segmentową", link: `/galeria?value=${'Garaże z bramą segmentową'}` },
+    { label: "Garaże z wiatą", link: `/galeria?value=${'Garaże z wiatą'}` },
+    { label: "Schowki ogrodowe", link: `/galeria?value=${'Schowki ogrodowe'}` },
+    { label: "Wiaty śmietnikowe", link: `/galeria?value=${'Wiaty śmietnikowe'}` }  
   ];
   const [menu, setMenu] = useState(false);
   const [currentLink, setCurrentLink] = useState("Home");
 
   return (
     <header className="w-full relative top-0 z-50">
-      <div className="top-contact flex justify-end h-[45px] items-center">
-        <Link className="pr-5 hover:scale-105 transition-transform" href="https://www.facebook.com/profile.php?id=100090694156429">
+      <div className="top-contact flex justify-end h-[45px]  items-center">
+        <Link target="_blank" className="pr-5  hover:scale-105 transition-transform" href="https://www.facebook.com/profile.php?id=100090694156429">
           <Image
             src="/images/facebook.png"
             alt="facebook"
@@ -55,7 +54,7 @@ function Header() {
         <div className="flex items-center text-sm pl-5 h-full md:pr-10 gap-10 bg-sky-500 text-white font-semibold">
           <Link
             className="flex hover:scale-105 transition-transform"
-            href="tel:+48 123 456 789"
+            href="tel:+48 518 812 110"
           >
             <Image
               src="/images/phone.svg"
@@ -64,7 +63,7 @@ function Header() {
               width={25}
               height={25}
             />
-            <p className="px-5 self-center">Tel: 518 812 110</p>
+            <p className="px-5 max-sm:hidden self-center">Tel: 518 812 110</p>
           </Link>
           <Link
             className="flex hover:scale-105 transition-transform"
@@ -77,7 +76,7 @@ function Header() {
               width={25}
               height={25}
             />
-            <p className="px-5 self-center">limostal.garaze@gmail.com</p>
+            <p className="px-5 self-center max-sm:hidden">limostal.garaze@gmail.com</p>
           </Link>
         </div>
       </div>
@@ -132,7 +131,7 @@ function Header() {
           <>
             <span className="text-white text-center border-l-2"></span>
             <Link
-              className="text-white hover:text-blue-600 text-center  md:py-3"
+              className="text-white hover:text-blue-600 text-center  md:py-1"
               key={link.label}
               href={link.link}
             >
