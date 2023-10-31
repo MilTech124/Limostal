@@ -54,7 +54,7 @@ function Header() {
         <div className="flex items-center text-sm pl-5 h-full md:pr-10 gap-10 bg-sky-500 text-white font-semibold">
           <Link
             className="flex hover:scale-105 transition-transform"
-            href="tel:+48 123 456 789"
+            href="tel:+48 518 812 110"
           >
             <Image
               src="/images/phone.svg"
