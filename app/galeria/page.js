@@ -11,7 +11,7 @@ const getData = async () => {
   try {
     const response = await axios.get(process.env.NEXT_PUBLIC_API_URL, {
       httpsAgent: httpsAgent  // Użycie skonfigurowanego agenta HTTPS
-    });
+    }, { next: { revalidate: 3600 } });
     if (response.status !== 200 ) {
         throw new Error(response.statusText)
       }        
