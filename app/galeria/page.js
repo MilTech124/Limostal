@@ -9,7 +9,7 @@ import https from 'https';
     rejectUnauthorized: false // Ignorowanie błędów certyfikatu SSL
   });
   try {
-    const response = await axios.get(process.env.NEXT_PUBLIC_API_URL, { next: { revalidate: 3600 } }, {
+    const response = await axios.get(process.env.NEXT_PUBLIC_API_URL, {
       httpsAgent: httpsAgent  // Użycie skonfigurowanego agenta HTTPS
     });
     if (response.status !== 200 ) {
