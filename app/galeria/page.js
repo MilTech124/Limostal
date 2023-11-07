@@ -4,14 +4,14 @@ import Galeria from '../components/Galeria'
 import axios from "axios";
 import https from 'https';
 
-const getData = async () => {
+ const getData = async () => {
   const httpsAgent = new https.Agent({
     rejectUnauthorized: false // Ignorowanie błędów certyfikatu SSL
   });
   try {
-    const response = await axios.get(process.env.NEXT_PUBLIC_API_URL, {
+    const response = await axios.get(process.env.NEXT_PUBLIC_API_URL, { next: { revalidate: 3600 } }, {
       httpsAgent: httpsAgent  // Użycie skonfigurowanego agenta HTTPS
-    }, { next: { revalidate: 3600 } });
+    });
     if (response.status !== 200 ) {
         throw new Error(response.statusText)
       }        
@@ -28,7 +28,7 @@ const getData = async () => {
 async function page() {
     const data = await getData();
   return (
-   <section className="galeria">
+   <section id="galeria">
         <HeroPages title={"Galeria"}/>
         |{!data ? "Ładowanie ..." : <Galeria data={data}/> }
         
