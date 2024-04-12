@@ -4,7 +4,7 @@ import Galeria from '../components/Galeria'
 import axios from "axios";
 import https from 'https';
 
-const getData = async () => {
+ const getData = async () => {
   const httpsAgent = new https.Agent({
     rejectUnauthorized: false // Ignorowanie błędów certyfikatu SSL
   });
@@ -28,7 +28,7 @@ const getData = async () => {
 async function page() {
     const data = await getData();
   return (
-   <section className="galeria">
+   <section id="galeria">
         <HeroPages title={"Galeria"}/>
         |{!data ? "Ładowanie ..." : <Galeria data={data}/> }
         
@@ -37,3 +37,5 @@ async function page() {
 }
 
 export default page
+
+export const revalidate = 3600; // 1 godzina

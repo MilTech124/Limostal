@@ -30,7 +30,7 @@ function WayTo() {
             image: '/images/Oval 4.webp',
             alt: 'Oval',
             title:"Zamówienie",
-            description:`Chcesz poznać cenę swojego wymarzonego garażu? Skontaktuj się z nami, a nasi specjaliści dokładnie ocenią Twoje potrzeby i przygotują dla Ciebie indywidualną wycenę. Dzięki nam dowiesz się, że jakość i solidność nie muszą być drogie.`
+            description:`Zamówienia wymagają precyzyjnego określenia wymiarów, materiałów i dodatkowych opcji. Klient powinien dostarczyć specyfikację potrzeb i preferencji, w tym wybór drzwi, okien czy systemów zabezpieczeń. Dobra komunikacja i jasne oczekiwania gwarantują satysfakcję oraz terminowość realizacji.`
         },
         circle5:{
             image: '/images/Oval 5.webp',
