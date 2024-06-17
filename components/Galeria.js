@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from 'next/navigation'
 import Masonry from "react-masonry-css";
+import Image from "next/image";
 
 
 function Galeria({ data }) {
@@ -70,7 +71,7 @@ function Galeria({ data }) {
     <div className="relative">
       {urlImage && (
         <div className="fixed top-0 left-0 w-screen h-screen z-50">
-          <img
+          <Image
             src={urlImage}
             width={1920}
             height={1080}
@@ -101,7 +102,7 @@ function Galeria({ data }) {
       >
         {obecna.map((image, index) => (
           <div key={index}>
-            <img
+            <Image
               src={image.thumbnail_image_url}
               width={600}
               height={400}
