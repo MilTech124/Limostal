@@ -62,12 +62,6 @@ export default async function OfferPage({ params }) {
   const currentGallery = itemsGallery[slug];
   const numberGallery = currentGallery.length;
   const thisGallery = currentGallery[numberGallery-1]
-
-  console.log(thisGallery);
-  
-
-  
-
   
 
   if (!offer) return <p>Oferta nie znaleziona.</p>;
