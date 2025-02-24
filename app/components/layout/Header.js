@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { XCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 
 function Header() {
   const links = [
@@ -12,8 +14,22 @@ function Header() {
       label: "Home",
     },
     {
-      link: "/#oferta",
+      link: "/oferta",
       label: "Oferta",
+      submenu:[{
+        label:"Garaże z bramą segmentową",
+        slug:"/oferta/garaze-z-brama-segmentowa"
+      },{
+        label:"Schowki ogrodowe",
+        slug:"/oferta/schowki-ogrodowe"
+      },{
+        label:"Wiaty śmietnikowe",  
+        slug:"/oferta/wiaty-smietnikowe"
+      },{
+        label:"Nowoczesne Garaże",
+        slug:"/oferta/nowoczesne-garaze"
+      }
+    ]
     },
     {
       link: "/warto-wiedziec",
@@ -23,6 +39,7 @@ function Header() {
     {
       link: "/galeria",
       label: "Galeria",
+     
     },
     {
       link: "/kontakt",
@@ -30,26 +47,24 @@ function Header() {
     },
   ];
   const garagesLinks = [
-    { label: "Garaże blaszane", link: `/galeria?value=${'Garaże Blaszane'}` },
+    { label:  "Nowoczesne garaże", link: `/galeria?value=${'Nowoczesne garaże'}` },
     { label: "Garaże z bramą segmentową", link: `/galeria?value=${'Garaże z bramą segmentową'}` },
-    { label: "Garaże z wiatą", link: `/galeria?value=${'Garaże z wiatą'}` },
+    { label: "Nowoczesne garaże z wiatą", link: `/galeria?value=${'Nowoczesne garaże z wiatą'}` },
     { label: "Schowki ogrodowe", link: `/galeria?value=${'Schowki ogrodowe'}` },
     { label: "Wiaty śmietnikowe", link: `/galeria?value=${'Wiaty śmietnikowe'}` }  
   ];
   const [menu, setMenu] = useState(false);
   const [currentLink, setCurrentLink] = useState("Home");
+  const [submenuOpen, setSubmenuOpen] = useState(null);
 
   return (
     <header className="w-full relative top-0 z-50">
       <div className="top-contact flex justify-end h-[45px]  items-center">
         <Link target="_blank" className="pr-5  hover:scale-105 transition-transform" href="https://www.facebook.com/profile.php?id=100090694156429">
-          <Image
-            src="/images/facebook.png"
-            alt="facebook"
-            priority={true}
-            width={48}
-            height={48}
-          />
+        <FaFacebook className="w-10 h-10 text-blue-400" />
+        </Link>
+        <Link href={"https://www.instagram.com/limostal/"} className="pr-5  hover:scale-105 transition-transform">
+        <FaInstagram className="w-10 h-10 text-blue-400 hover:text-pink-400" />
         </Link>
         <div className="flex items-center text-sm pl-5 h-full md:pr-10 gap-10 bg-sky-500 text-white font-semibold">
           <Link
@@ -92,25 +107,66 @@ function Header() {
           />
         </Link>
 
-        <nav className={menu ? " flex" : "max-sm:hidden"}>
-          <ul className="flex max-sm:flex-col gap-10 max-sm:gap-5  font-semibold md:pr-10">
-            {links.map((link) => (
-              <li key={link.label}>
-                <Link
-                  onClick={() => (setCurrentLink(link.label), setMenu(false))}
-                  className={
-                    currentLink === link.label
-                      ? "text-blue-400"
-                      : "hover:text-blue-600 "
-                  }
-                  href={link.link}
-                >
+        <nav className={menu ? "flex" : "max-sm:hidden"}>
+      <ul className="flex max-sm:flex-col gap-10 max-sm:gap-5 relative font-semibold md:pr-10">
+        {links.map((link, index) => (
+          <li
+            key={link.label}
+            className="relative"
+            onMouseEnter={() => setSubmenuOpen(index)}
+            onMouseLeave={() => setSubmenuOpen(null)}
+          >
+            {link.submenu ? (
+              <>
+                {/* Nieklikalny element "Oferta" */}
+                <span className="cursor-default hover:text-blue-600">
                   {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+                </span>
+
+                {/* Submenu */}
+                {submenuOpen === index && (
+                  <ul className="flex flex-col gap-4 absolute top-full left-0 bg-slate-200 p-3 w-40 rounded shadow-md z-10">
+                    {link.submenu.map((submenu) => (
+                      <li key={submenu.slug}>
+                        <Link
+                          onClick={() => {
+                            setCurrentLink(submenu.label);
+                            setMenu(false);
+                          }}
+                          className={
+                            currentLink === submenu.label
+                              ? "text-blue-400"
+                              : "hover:text-blue-600"
+                          }
+                          href={submenu.slug}
+                        >
+                          <span className="cursor-pointer text-sm font-normal w-20">{submenu.label}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </>
+            ) : (
+              <Link
+                onClick={() => {
+                  setCurrentLink(link.label);
+                  setMenu(false);
+                }}
+                className={
+                  currentLink === link.label
+                    ? "text-blue-400"
+                    : "hover:text-blue-600"
+                }
+                href={link.link}
+              >
+                {link.label}
+              </Link>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
         <div className="hidden max-sm:block absolute right-5 top-20">
           {menu ? (
             <XCircleIcon

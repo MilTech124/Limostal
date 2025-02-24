@@ -65,3 +65,7 @@
     z-index: 9999;
     transform: translate(-50%, -50%);
   }
+
+  [data-selected="true"] {
+    color: white !important;
+  }

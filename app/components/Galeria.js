@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from 'next/navigation'
 import Masonry from "react-masonry-css";
+import Image from "next/image";
 
 
 function Galeria({ data }) {
@@ -11,20 +12,18 @@ function Galeria({ data }) {
 
   const  value  = searchParams.get('value')
 
-
-
   const breakpointColumnsObj = {
-    default: 3,
-    1100: 3,
+    default: 4,
+    1100: 4,
     700: 2,
     500: 2,
   };
 
   const garages = [
-    "Garaże Blaszane",
+    "Nowoczesne garaże",
     "Garaże z bramą segmentową",
-    "Garaże z wiatą",
     "Schowki ogrodowe",
+    "Nowoczesne garaże z wiatą",
     "Wiaty śmietnikowe",
   ];
 
@@ -32,22 +31,21 @@ function Galeria({ data }) {
 
   const [urlImage, setUrlImage] = useState(null);
   const galeria = data[0].acf.photo_gallery;
-
-  const [obecna, setObecna] = useState(galeria.garazeBlaszane[0]);
+  const [obecna, setObecna] = useState(galeria.nowoczesne_garaze[0]);
 
 
   const currentGallery = () => {
     if (active === garages[0]) {
-      return setObecna(galeria.garazeBlaszane[0]);
+      return setObecna(galeria.nowoczesne_garaze[0]);
     }
     if (active === garages[1]) {
       return setObecna(galeria.garaze_z_brama[1]);
     }
     if (active === garages[2]) {
-      return setObecna(galeria.garaze_z_wiata[3]);
+      return setObecna(galeria.schowki_ogrodowe[2]);
     }
     if (active === garages[3]) {
-      return setObecna(galeria.schowki_ogrodowe[2]);
+      return setObecna(galeria.nowoczesne_garaze_z_wiata[3]);
     }
     if (active === garages[4]) {
       return setObecna(galeria.wiaty_smietnikowe[4]);
@@ -70,7 +68,7 @@ function Galeria({ data }) {
     <div className="relative">
       {urlImage && (
         <div className="fixed top-0 left-0 w-screen h-screen z-50">
-          <img
+          <Image
             src={urlImage}
             width={1920}
             height={1080}
@@ -101,7 +99,7 @@ function Galeria({ data }) {
       >
         {obecna.map((image, index) => (
           <div key={index}>
-            <img
+            <Image
               src={image.thumbnail_image_url}
               width={600}
               height={400}

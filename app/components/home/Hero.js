@@ -37,7 +37,7 @@ function Hero() {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide} className="relative">
-            <Image src={slide}  quality={50} width={1440} height={900} alt="logo2" cover />
+            <Image src={slide}  quality={50} width={1440} height={800} alt="logo2" cover />
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-70"> 
                 <Image src="/images/logo_pion.png" alt="logo" width={903} height={924} className="!w-[20vw] !h-auto"/>
                 <Link href="/kontakt">

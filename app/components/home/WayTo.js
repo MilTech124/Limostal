@@ -10,21 +10,25 @@ function WayTo() {
             image: '/images/Oval.webp',
             alt: 'Oval',
             title:"Kontakt",
-            description:`Jesteśmy tu, aby Ci pomóc!
-            Numer telefonu: 518 812 110
-            Adres e-mail: limostal.garaze@gmail.com`
+            description:( <>
+                Niezależnie od tego, czy masz pytania dotyczące naszych produktów, czy potrzebujesz wsparcia przy zamówieniu, nasz zespół jest zawsze do Twojej dyspozycji.
+                <br />
+                Numer telefonu: <strong>518 812 110</strong>
+                <br />
+                Adres e-mail: <strong>limostal.garaze@gmail.com</strong>
+              </>)
         },
         circle2:{
             image: '/images/Oval 2.webp',
             alt: 'Oval',
             title:"Doradztwo na najwyższym poziomie",
-            description:`Nasi eksperci są gotowi pomóc Ci znaleźć idealny garaż dostosowany do Twoich potrzeb. Skorzystaj z naszej wiedzy i doświadczenia, aby podjąć najlepszą decyzję.`
+            description:`Nasi doświadczeni specjaliści są gotowi wesprzeć Cię w wyborze najlepszej opcji, dostosowanej do Twoich indywidualnych potrzeb. Wykorzystaj nasze bogate doświadczenie i profesjonalną wiedzę, aby podjąć pewną decyzję. Zaufaj Limostal i ciesz się spokojem, wiedząc, że dokonujesz właściwego wyboru.`
         },
         circle3:{
             image: '/images/Oval 3.webp',
             alt: 'Oval',
             title:"Wycena",
-            description:`Chcesz poznać cenę swojego wymarzonego garażu? Skontaktuj się z nami, a nasi specjaliści dokładnie ocenią Twoje potrzeby i przygotują dla Ciebie indywidualną wycenę. Dzięki nam dowiesz się, że jakość i solidność nie muszą być drogie.`
+            description:`W Limostal doskonale rozumiemy, jak ważna jest jasna i przejrzysta wycena. Nasz zespół jest gotów dostarczyć Ci szczegółową i uczciwą wycenę, dostosowaną do Twoich potrzeb. Wystarczy, że skontaktujesz się z nami, a my zajmiemy się resztą!`
         },
         circle4:{
             image: '/images/Oval 4.webp',
@@ -36,26 +40,25 @@ function WayTo() {
             image: '/images/Oval 5.webp',
             alt: 'Oval',
             title:"Projekt",
-            description:`W Limostal wierzymy, że Twój garaż powinien być wyjątkowy, tak samo jak Ty. Dlatego do każdego zamówienia tworzymy indywidualny projekt. Jesteśmy gotowi spełnić Twoje oczekiwania. Nasze projekty są tworzone z dbałością o każdy detal, zapewniając Ci garaż, który nie tylko będzie funkcjonalny, ale także estetyczny.`
+            description:`W Limostal wierzymy, że każdy projekt jest wyjątkowy i zasługuje na indywidualne podejście. Nasz zespół doświadczonych specjalistów z zaangażowaniem realizuje Twoje pomysły, dbając o każdy detal. Od wstępnych konsultacji, przez projektowanie, aż po finalną realizację – jesteśmy z Tobą na każdym kroku. Dzięki naszej wiedzy i doświadczeniu, możemy zaoferować Ci rozwiązania, które spełnią wszystkie Twoje oczekiwania. Zaufaj Limostal i pozwól nam przekształcić Twoje wizje w rzeczywistość.`
         },
         circle6:{
             image: '/images/Oval 6.webp',
             alt: 'Oval',
             title:"Produkcja",
-            description:`W Limostal produkcja garaży to nasza pasja i zaangażowanie. Każdy garaż, który wychodzi spod naszych rąk, jest efektem starannej pracy i dbałości o jakość. Z Limostal otrzymasz nie tylko garaż, ale również pewność, że inwestujesz w produkt o najwyższej jakości. Nasza produkcja to połączenie tradycji rzemieślniczej z nowoczesnym podejściem.`
+            description:`Stawiamy na innowacyjność, precyzję i jakość w każdym etapie produkcji. Dzięki nowoczesnym technologiom oraz wykwalifikowanej kadrze, możemy zapewnić produkty, które spełnią nawet najbardziej wyśrubowane wymagania. Każdy garaż, który wychodzi spod naszych rąk, jest efektem starannej pracy i dbałości o jakość. Z Limostal otrzymasz nie tylko garaż, ale również pewność, że inwestujesz w produkt o najwyższej jakości.`
         },
         circle7:{
             image: '/images/Oval 7.webp',
             alt: 'Oval',
             title:"Transport",
-            description:`Dla naszych klientów zapewniamy DARMOWY TRANSPORT. Nasza firma dba o to, aby Twój garaż dotarł do Ciebie w nienaruszonym stanie i zgodnie z ustalonym harmonogramem. Dzięki naszemu transportowi możesz być pewien, że Twój nowy garaż będzie gotowy do użytku w dogodnym dla Ciebie terminie.
-            Montaż odbędzie się jeśli samochód ciężarowy będzie w stanie dojechać do wskazanego miejsca.`
+            description:`Dla naszych klientów zapewniamy DARMOWY TRANSPORT. Nasza firma dba o to, aby Twój garaż dotarł do Ciebie w nienaruszonym stanie i zgodnie z ustalonym harmonogramem. Dzięki naszemu transportowi możesz być pewien, że Twój nowy garaż będzie gotowy do użytku w dogodnym dla Ciebie terminie. Montaż odbędzie się jeśli samochód ciężarowy będzie w stanie dojechać do wskazanego miejsca.`
         },
         circle8:{
             image: '/images/Oval 8.webp',
             alt: 'Oval',
             title:"Montaż",
-            description:`W Limostal rozumiemy, że montaż garażu to kluczowy krok w procesie dostarczania Ci kompletnego rozwiązania. Nasza doświadczona ekipa montażowa zadba o to, aby Twój garaż został zainstalowany solidnie i zgodnie z najwyższymi standardami.`
+            description:`W Limostal rozumiemy, jak ważny jest montaż garażu jako kluczowy element całego procesu. Nasza doświadczona ekipa montażowa zapewni solidną i precyzyjną instalację, dbając o najwyższe standardy jakości.`
         },
     }
 

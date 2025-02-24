@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['backendlimostal.limostal.pl'],
+        domains: ['backendlimostal.limostal.pl','randomuser.me','limostal.webd.pro'],
       },
 }
 

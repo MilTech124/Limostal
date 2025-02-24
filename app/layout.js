@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Colophon from "./components/layout/Colophon";
+import HeroUiProvider from "./providers/HeroUiProvider";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +21,15 @@ export default function RootLayout({ children }) {
       style={{ scrollBehavior: "smooth" }}
     >
       <body className={inter.className + " relative"}>
-        <Header />
-        {children}
-        <Footer />
-        <Colophon />
+        
+          <Header />
+          <HeroUiProvider >
+            {children}
+          </HeroUiProvider>
+          <Footer />
+          <Colophon />
+   
+ 
       </body>
     </html>
   );
