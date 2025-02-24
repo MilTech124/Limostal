@@ -94,7 +94,7 @@ function Galeria({ data }) {
       </div>
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid"
+        className="my-masonry-grid container mx-auto"
         columnClassName="my-masonry-grid_column"
       >
         {obecna.map((image, index) => (

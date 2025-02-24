@@ -134,7 +134,8 @@ export default async function OfferPage({ params }) {
 					src={image.full_image_url}
 					width={600}
 					height={400}
-					className="shadow-md "
+					className="shadow-md w-full h-full object-cover"
+          cover
 				/>
 			</div>
 		))}
