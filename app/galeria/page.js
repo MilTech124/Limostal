@@ -4,7 +4,6 @@ import Galeria from '../components/Galeria'
 import axios from "axios";
 import https from 'https';
 
-export const revalidate = 3600; // ISR co 1 godzinę
 
  const getData = async () => {
   const httpsAgent = new https.Agent({
@@ -40,3 +39,4 @@ async function page() {
 
 export default page
 
+export const revalidate = 3600; // 1 godzina
