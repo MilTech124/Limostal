@@ -88,7 +88,7 @@ export default async function OfferPage({ params }) {
       title: "Filc antykondensacyjny",
       description:
         "Filc antykondensacyjny na dachu garażu zmniejsza skraplanie się pary wodnej, pomagając utrzymać suche i bezpieczne wnętrze.",
-      image: "/images/oferta/filc1.jpg",
+      // image: "/images/oferta/filc1.jpg",
       image2: "/images/oferta/filc2.jpg",
     },
     {
@@ -109,6 +109,13 @@ export default async function OfferPage({ params }) {
     },
   ];
 
+  // Filter accessories based on slug
+  let filteredAccessories = accessories;
+  if (slug === "wiaty-smietnikowe") {
+    filteredAccessories = accessories.filter(
+      item => item.key === "rynny" || item.key === "drzwi"
+    );
+  }
 
   return (
     <div>
@@ -124,7 +131,7 @@ export default async function OfferPage({ params }) {
         </div>
       </HeroPages>
 
-     <Tabs accessories={accessories} />
+     <Tabs accessories={filteredAccessories} />
 
     {thisGallery && (
         <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
@@ -144,4 +151,3 @@ export default async function OfferPage({ params }) {
     </div>
   );
 }
-

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Hero from './components/home/Hero'
 import WayTo from './components/home/WayTo'
 import About from './components/home/About'
@@ -11,7 +10,7 @@ export default function Home() {
    <main>
       <Hero />
       <WayTo />
-      <About />
+      {/* <About /> */}
       <Opinion />
       <MoreInfos />
       <FreeProjects />

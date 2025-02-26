@@ -16,7 +16,11 @@ function Header() {
     {
       link: "/oferta",
       label: "Oferta",
-      submenu:[{
+      submenu:[
+        {
+          label:"Nowoczesne Garaże",
+          slug:"/oferta/nowoczesne-garaze"
+        },{
         label:"Garaże z bramą segmentową",
         slug:"/oferta/garaze-z-brama-segmentowa"
       },{
@@ -25,15 +29,28 @@ function Header() {
       },{
         label:"Wiaty śmietnikowe",  
         slug:"/oferta/wiaty-smietnikowe"
-      },{
-        label:"Nowoczesne Garaże",
-        slug:"/oferta/nowoczesne-garaze"
-      }
+      },
     ]
     },
     {
       link: "/warto-wiedziec",
       label: "Warto wiedzieć",
+      submenu: [
+        {
+          label:"Transport i montaż",
+          slug:"/warto-wiedziec#transport"
+        },
+        {
+          label:"Przygotowanie podłoża",
+          slug:"/warto-wiedziec#przygotowanie-podloza"
+        },{
+          label:"Kolorystyka",
+          slug:"/warto-wiedziec#kolorystyka"
+        },{
+          label:"Bramy",
+          slug:"/warto-wiedziec#brama"
+        }
+      ]
     },
 
     {

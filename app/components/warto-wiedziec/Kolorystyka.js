@@ -5,9 +5,10 @@ import { Accordion, AccordionItem } from "@heroui/react";
 function Kolorystyka() {
   const woodColors = [
     { title: "Złoty dąb", image: "/images/colors/zloty-dab.jpg" },
+    { title: "Złoty dąb 3D", image: "/images/colors/zloty-dab-3d.png" },
     { title: "Orzech", image: "/images/colors/orzech.jpg" },
-    { title: "Jasny orzech", image: "/images/colors/bielony.webp" },
-    { title: "Złoty dąb 3D", image: "/images/colors/3d.jpg" },
+    { title: "Dąb bielony", image: "/images/colors/dab-bielony.png" },
+    
   ];
 
   const colors = [
@@ -37,7 +38,7 @@ function Kolorystyka() {
 
       <Accordion className="w-full max-w-screen-xl mt-5" defaultExpandedKeys={["Kolory Drewna"]}>
         <AccordionItem title="Kolory Drewna" key={"Kolory Drewna"}>
-          <div className="flex flex-wrap justify-between gap-4">
+          <div className="flex flex-wrap justify-evenly">
             {woodColors.map((color, index) => (
               <div key={index} className="flex flex-col items-center">
                 <Image src={color.image} width={350} height={350} alt={color.title} className="border-2 hover:border-4 w-40 h-20" />
@@ -48,7 +49,7 @@ function Kolorystyka() {
         </AccordionItem>
 
         <AccordionItem title="Kolory RAL">
-          <div className="flex flex-wrap justify-between gap-4">
+          <div className="flex flex-wrap justify-between ">
             {colors.map((color, index) => (
               <div key={index} className="flex flex-col items-center w-1/5">
                 <img alt={color.title} src={color.image} width={150} height={100} className="border-2 hover:border-4" />

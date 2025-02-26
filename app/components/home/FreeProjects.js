@@ -8,9 +8,15 @@ function FreeProjects() {
           <div className='flex justify-center p-10 max-w-screen-xl max-md:flex-wrap'>
           <div><Image src="/images/projekt.webp" width={1031} height={729} alt='projekt'/></div>
           <div className='flex flex-col gap-5 max-w-lg'>
-            <p>W Limostal dbamy o to, aby każdy nasz klient otrzymał pełen obraz swojego przyszłego garażu jeszcze przed rozpoczęciem produkcji. Dlatego do każdego zamówienia dołączamy profesjonalny projekt garażu, który pozwala Ci zobaczyć, jak będzie wyglądać Twój garaż po zakończeniu procesu.</p>
-            <p>Nasze projekty garażów uwzględniają wszystkie Twoje preferencje i wymagania. Dzięki nim możesz dostosować wygląd, układ wnętrza i inne szczegóły, zapewniając, że Twój garaż spełni wszystkie Twoje oczekiwania.</p>
-            <p> Skorzystaj z naszej usługi projektowania, aby mieć pewność, że Twój garaż będzie idealnie dopasowany do Twoich potrzeb i estetycznych upodobań. Z Limostal otrzymasz nie tylko garaż, ale również kompletny projekt, który pozwoli Ci zobaczyć przyszłość.</p>
+        <p>
+        W Limostal dbamy o to, aby każdy klient otrzymał pełen obraz przyszłego
+garażu przed rozpoczęciem produkcji. Do każdego zamówienia dołączamy profesjonalny
+projekt, uwzględniający wszystkie preferencje i wymagania. Nasze projekty pozwalają
+dostosować wygląd, układ wnętrza i inne szczegóły, zapewniając, że garaż spełni oczekiwania.
+Skorzystaj z naszej usługi projektowania, aby mieć pewność, że garaż będzie idealnie
+dopasowany do Twoich potrzeb. Z Limostal otrzymasz nie tylko garaż, ale i kompletny projekt
+przyszłości.
+        </p>
           </div>
 
           </div>
