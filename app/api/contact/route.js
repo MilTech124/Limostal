@@ -27,7 +27,7 @@ export async function POST(request) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'limostal.garaze@gmail.com', // Replace with your email
+      to: process.env.COMPANY_MAIL, // Replace with your email
       subject: `Nowa wiadomość od ${name}`,
       replyTo: email,
       text: `
