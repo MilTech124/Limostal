@@ -1,158 +1,105 @@
 "use client";
 import Circle from "../ui/Circle";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 function WayTo() {
   const circles = {
     circle1: {
       image: "/images/Oval.webp",
-      alt: "Oval",
+      alt: "Kontakt",
       title: "Kontakt",
+      step: "1",
       description: (
         <>
-          Niezależnie od tego, czy masz pytania dotyczące naszych produktów, czy
-          potrzebujesz wsparcia przy zamówieniu, nasz zespół jest zawsze do
-          Twojej dyspozycji. <br />
-          Numer telefonu: <strong>518 812 110</strong>
+          Skontaktuj się z nami telefonicznie lub mailowo.
           <br />
-          Adres e-mail: <strong>limostal.garaze@gmail.com</strong>
+          <strong>518 812 110</strong> | <strong>limostal.garaze@gmail.com</strong>
         </>
       ),
     },
     circle2: {
       image: "/images/Oval 2.webp",
-      alt: "Oval",
-      title: "Doradztwo na najwyższym poziomie",
-      description: `Nasi doświadczeni specjaliści są gotowi wesprzeć Cię w
-                    wyborze najlepszej opcji, dostosowanej do Twoich indywidualnych potrzeb. Wykorzystaj
-                    nasze bogate doświadczenie i profesjonalną wiedzę, aby podjąć pewną decyzję.`,
+      alt: "Doradztwo",
+      title: "Doradztwo",
+      step: "2",
+      description: "Nasi specjaliści pomogą Ci wybrać najlepsze rozwiązanie dopasowane do Twoich potrzeb.",
     },
     circle3: {
       image: "/images/Oval 3.webp",
-      alt: "Oval",
+      alt: "Wycena",
       title: "Wycena",
-      description: `W Limostal rozumiemy, jak ważna jest precyzyjna wycena. Nasz zespół dostarczy Ci
-                    szczegółową i uczciwą ofertę, dostosowaną do Twoich potrzeb. Skontaktuj się z nami, a my
-                    zajmiemy się resztą!`,
+      step: "3",
+      description: "Przygotujemy szczegółową ofertę, dostosowaną do Twoich wymagań i budżetu.",
     },
     circle4: {
       image: "/images/Oval 4.webp",
-      alt: "Oval",
+      alt: "Zamówienie",
       title: "Zamówienie",
-      description: `Zamówienia wymagają precyzyjnego określenia wymiarów, materiałów i opcji.
-                    Klient powinien dostarczyć specyfikację potrzeb, w tym wybór drzwi, okien czy systemów
-                    zabezpieczeń. Dobra komunikacja i jasne oczekiwania gwarantują satysfakcję oraz
-                    terminowość realizacji.`,
+      step: "4",
+      description: "Określ wymiary, materiały i dodatkowe opcje dla Twojego garażu.",
     },
     circle5: {
       image: "/images/Oval 5.webp",
-      alt: "Oval",
+      alt: "Projekt",
       title: "Projekt",
-      description: `W Limostal wierzymy, że każdy projekt zasługuje na indywidualne podejście. Nasi
-                specjaliści realizują Twoje pomysły z dbałością o każdy detal, od konsultacji po finalną
-                realizację. Dzięki naszej wiedzy i doświadczeniu, oferujemy rozwiązania spełniające wszystkie
-                oczekiwania. Zaufaj Limostal i pozwól nam przekształcić Twoje wizje w rzeczywistość.`,
+      step: "5",
+      description: "Tworzymy indywidualny projekt z dbałością o każdy detal.",
     },
     circle6: {
       image: "/images/Oval 6.webp",
-      alt: "Oval",
+      alt: "Produkcja",
       title: "Produkcja",
-      description: `Stawiamy na innowacyjność, precyzję i jakość. Dzięki nowoczesnym technologiom
-                    i wykwalifikowanej kadrze, spełniamy najwyższe wymagania. Z Limostal otrzymasz nie tylko
-                    garaż, ale również pewność, że inwestujesz w produkt o najwyższej jakości.`,
+      step: "6",
+      description: "Wykorzystujemy nowoczesne technologie i materiały najwyższej jakości.",
     },
     circle7: {
       image: "/images/Oval 7.webp",
-      alt: "Oval",
+      alt: "Transport",
       title: "Transport",
-      description: `Zapewniamy DARMOWY TRANSPORT, dbając o dostarczenie garażu w
-                    nienaruszonym stanie i zgodnie z harmonogramem. Dzięki naszemu transportowi Twój garaż
-                    będzie gotowy do użytku w dogodnym terminie, pod warunkiem, że ciężarówka będzie w
-                    stanie dojechać do wskazanego miejsca.`,
+      step: "7",
+      description: "Zapewniamy DARMOWY TRANSPORT, dostarczając garaż zgodnie z harmonogramem.",
     },
     circle8: {
       image: "/images/Oval 8.webp",
-      alt: "Oval",
+      alt: "Montaż",
       title: "Montaż",
-      description: `W Limostal rozumiemy, jak ważny jest montaż garażu jako kluczowy element całego
-                    procesu. Nasza doświadczona ekipa montażowa zapewni solidną i precyzyjną instalację,
-                    dbając o najwyższe standardy jakości.`,
+      step: "8",
+      description: "Nasza ekipa montażowa zapewni solidną i precyzyjną instalację.",
     },
   };
 
   return (
-    <section className="way-to py-10 w-full">
-      <h2 className="md:text-5xl text-xl text-right md:pr-10 border-b-4 flex justify-end  text-neutral-400">
-        Droga do &nbsp;<span className="text-sky-500">wymarzonego garażu</span>
-      </h2>
-      <div className="flex flex-wrap justify-center ">
-        <div className="flex flex-wrap justify-center max-sm:scale-50 max-sm:mt-[-350px]">
-          <Circle
-            image={circles.circle1.image}
-            title={circles.circle1.title}
-            description={circles.circle1.description}
-          />
-          <div className="lg:pt-40">
-            <Circle
-              image={circles.circle2.image}
-              title={circles.circle2.title}
-              description={circles.circle2.description}
-            />
-          </div>
-          <div className="lg:pt-80">
-            <Circle
-              image={circles.circle3.image}
-              title={circles.circle3.title}
-              description={circles.circle3.description}
-            />
-          </div>
-        </div>
-        <div className="flex flex-wrap justify-center max-sm:scale-50 max-sm:mt-[-650px]">
-          <div className="lg:pt-20">
-            <Circle
-              image={circles.circle5.image}
-              title={circles.circle5.title}
-              description={circles.circle5.description}
-            />
-          </div>
-          <div className="lg:-mt-20">
-            <Circle
-              image={circles.circle4.image}
-              title={circles.circle4.title}
-              description={circles.circle4.description}
-            />
-          </div>
-          <div className="lg:pt-0  lg:w-[400px]"></div>
-        </div>
-
-        <div className="flex flex-wrap justify-center max-sm:scale-50 max-sm:mt-[-550px]">
-          <div className="lg:pt-0  lg:w-[400px]"></div>
-          <div className="lg:-mt-20">
-            <Circle
-              image={circles.circle6.image}
-              title={circles.circle6.title}
-              description={circles.circle6.description}
-            />
-          </div>
-          <div className="lg:pt-40">
-            <Circle
-              image={circles.circle7.image}
-              title={circles.circle7.title}
-              description={circles.circle7.description}
-            />
+    <section className="way-to py-10 md:py-16 w-full bg-gray-50">
+      <Fade triggerOnce>
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 text-neutral-700">
+          Droga do <span className="text-sky-500">wymarzonego garażu</span>
+        </h2>
+        <div className="container mx-auto px-2 md:px-4">
+          <div className="relative">
+            {/* Desktop connection lines */}
+            <div className="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-sky-200 -z-10 transform -translate-y-1/2"></div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 lg:gap-8">
+              {Object.values(circles).map((circle, index) => (
+                <Slide direction={index % 2 === 0 ? "left" : "right"} triggerOnce key={index} delay={index * 100}>
+                  <div className="relative">
+                    <div className="absolute -top-3 -left-3 md:-top-5 md:-left-5 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full bg-sky-500 flex items-center justify-center text-white font-bold text-sm md:text-lg lg:text-xl z-10">
+                      {circle.step}
+                    </div>
+                    <Circle
+                      image={circle.image}
+                      alt={circle.alt}
+                      title={circle.title}
+                      description={circle.description}
+                      className="transform transition-all duration-300 hover:scale-105 "
+                    />
+                  </div>
+                </Slide>
+              ))}
+            </div>
           </div>
         </div>
-
-        <div className="flex flex-wrap  w-full justify-center max-sm:scale-50 max-sm:mt-[-380px]">
-          <div className="lg:-mt-20">
-            <Circle
-              image={circles.circle8.image}
-              title={circles.circle8.title}
-              description={circles.circle8.description}
-            />
-          </div>
-        </div>
-      </div>
+      </Fade>
     </section>
   );
 }
