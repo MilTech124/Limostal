@@ -116,7 +116,7 @@ export default async function OfferPage({ params }) {
       title: "Filc antykondensacyjny",
       description:
         "Filc antykondensacyjny na dachu garażu zmniejsza skraplanie się pary wodnej, pomagając utrzymać suche i bezpieczne wnętrze.",
-      // image: "/images/oferta/filc1.jpg",
+      image: "/images/oferta/filc1.jpg",
       image2: "/images/oferta/filc2.jpg",
     },
     {
