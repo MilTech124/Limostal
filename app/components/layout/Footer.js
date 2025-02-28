@@ -21,7 +21,7 @@ function Footer() {
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1: About */}
-          <div className="space-y-6">
+          <div className="">
             <div className="bg-white p-3 rounded-lg inline-block">
               <Image 
                 src="/images/logo_poziom.png" 
@@ -31,7 +31,9 @@ function Footer() {
                 className="h-auto"
               />
             </div>
-            <p className="text-gray-300 text-sm">
+            <p className="text-lg font-bold pt-2">Paweł Smoter</p>
+            <p className="text-sm font-semibold pt-0 mt-0">LIMOSTAL NOWOCZESNE GARAŻE</p>
+            <p className="text-gray-300 text-sm pt-2">
               Specjalizujemy się w produkcji wysokiej jakości garaży blaszanych, 
               oferując kompleksową obsługę od projektu po montaż.
             </p>

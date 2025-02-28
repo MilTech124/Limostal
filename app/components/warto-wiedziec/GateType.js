@@ -17,7 +17,7 @@ function GateType() {
         {/* BRAMA SEGMENTOWA */}
         <div className="flex gap-5 max-sm:flex-col pt-5">
           <Image
-            src="/images/hero/4.jpg"
+            src="/images/segmentowa.jpg"
             width={500}
             height={500}
             alt="brama-garazowa"
@@ -38,7 +38,7 @@ function GateType() {
         {/* BRAMA UCHYLNA */}
         <div className="flex gap-5 max-sm:flex-col md:pt-10 pt-5">
           <Image
-            src="/images/hero/6.jpeg"
+            src="/images/uchylna.jpg"
             width={500}
             height={500}
             alt="brama-garazowa"
@@ -57,6 +57,26 @@ function GateType() {
           </div>
         </div>
         {/* BRAMA UCHYLNA */}
+        {/* BRAMA DWUSKRZYDLOWA */}
+        <div className="flex gap-5 max-sm:flex-col md:pt-10 pt-5">
+          <Image
+            src="/images/dwuskrzydlowa.jpg"
+            width={500}
+            height={500}
+            alt="brama-garazowa"
+          />
+          <div>
+            <h3 className="md:text-3xl text-xl"> Brama dwuskrzydłowa</h3>
+            <p className="text-sm">
+            Idealnie sprawdzają się nie tylko do garażów, ale także schowków
+            ogrodowych czy wiat śmietnikowych. Bramy dwuskrzydłowe charakteryzują się możliwością
+            otwierania na dwie strony, co znacząco zwiększa funkcjonalność i wygodę użytkowania. Dodatkowo,
+            są one dostępne zarówno w wersji symetrycznej, jak i niesymetrycznej, co pozwala na łatwe
+            dostosowanie do różnorodnych potrzeb i warunków przestrzennych.
+            </p>
+          </div>
+        </div>
+        {/* DWUSKRZYDLOWA*/}
         <p>Należy pamiętać,  że brama garażowa może całkowicie zmienić wygląd i funkcjonalność Twojego garażu 😊</p>
       </div>
     </section>

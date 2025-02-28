@@ -157,7 +157,7 @@ function Galeria({ data }) {
       )}
 
       {/* Filter tabs */}
-      <div className="sticky top-[148px] z-30 bg-white shadow-md">
+      <div className=" z-30 bg-white shadow-md">
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-center overflow-x-auto py-4 px-4">
             {garages.map((garage, index) => (
@@ -211,7 +211,7 @@ function Galeria({ data }) {
               >
                 <div className="relative">
                   <Image
-                    src={image.thumbnail_image_url}
+                    src={image.full_image_url}
                     width={600}
                     height={400}
                     className={`

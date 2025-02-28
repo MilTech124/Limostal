@@ -103,7 +103,7 @@ function Header() {
       <div className="bg-neutral-800 text-white">
         <div className="container mx-auto flex justify-between items-center h-10 px-4">
           <div className="hidden md:flex items-center space-x-4 text-sm">
-            <span>Kamionna 161, 32-732 Kamionna</span>
+            {/* <span>Kamionna 161, 32-732 Kamionna</span> */}
           </div>
           <div className="flex items-center space-x-4">
             <Link 
@@ -367,7 +367,7 @@ function Header() {
       </div>
       
       {/* Categories Bar */}
-      <div className="bg-sky-500 text-white overflow-x-auto whitespace-nowrap">
+      <div className="bg-sky-500 text-white overflow-x-auto whitespace-nowrap max-sm:hidden">
         <div className="container mx-auto px-4">
           <div className="flex space-x-6 py-2">
             {garagesLinks.map((link, index) => (

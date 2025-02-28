@@ -1,6 +1,8 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import { useEffect,useState } from "react";
+import axios from "axios";
 
 
 // Import Swiper styles
@@ -11,13 +13,32 @@ import { Pagination, Navigation,Autoplay } from "swiper/modules";
 import Link from "next/link";
 
 function Hero() {
-  const slides = [
-    "/images/hero/1.jpg",
-    "/images/hero/2.jpg",
-    "/images/hero/3.jpg",
-    "/images/hero/4.jpg",
-    "/images/hero/5.jpg",
-  ];
+  const [slides, setSlides] = useState([]);
+
+  useEffect(() => {
+
+    const getSlides = async () => {
+      const refSlides= axios.get(process.env.NEXT_PUBLIC_HOME);
+      const data = await refSlides;
+      console.log(data.data[0].acf.zdjecia);
+      setSlides(data.data[0].acf.zdjecia);
+
+    }
+
+    getSlides();
+
+  }, []);
+ 
+
+
+
+  // const slides = [
+  //   "/images/hero/1.jpg",
+  //   "/images/hero/2.jpg",
+  //   "/images/hero/3.jpg",
+  //   "/images/hero/4.jpg",
+  //   "/images/hero/5.jpg",
+  // ];
   return (
     <section className="hero">
       <Swiper
@@ -37,7 +58,7 @@ function Hero() {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide} className="relative">
-            <Image src={slide}  quality={50} width={1440} height={800} alt="logo2" cover />
+            <Image src={slide.full_image_url}  quality={50} width={1440} height={800} alt="logo2" cover />
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-70"> 
                 <Image src="/images/logo_pion.png" alt="logo" width={903} height={924} className="!w-[20vw] !h-auto"/>
                 <Link href="/kontakt">

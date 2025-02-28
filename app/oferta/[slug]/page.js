@@ -46,15 +46,15 @@ const offers = {
       "Wiaty śmietnikowe to funkcjonalne rozwiązanie, które pomaga utrzymać porządek na posesji. Nasze wiaty są wykonane z trwałych materiałów, takich jak lamele – poziome panele z blachy powlekanej. Dzięki temu pojemniki na śmieci są chronione przed niekorzystnymi warunkami atmosferycznymi, a sama konstrukcja z profili zamkniętych wyróżnia się nowoczesnym wyglądem. Wiaty śmietnikowe harmonijnie wpisują się w estetykę Twojej posesji, zapewniając jednocześnie elegancki i schludny wygląd.",
     image: "/images/wiaty-smietnikowe.jpg",
     features: [
-      "Ochrona pojemników przed warunkami atmosferycznymi",
-      "Konstrukcja z profili zamkniętych",
-      "Nowoczesny wygląd dzięki lamelom",
-      "Harmonijne wpisanie się w estetykę posesji",
-      "Łatwy dostęp do pojemników"
+      "Solidna konstrukcja z profili zamkniętych ocynkowanych",
+      "Estetyczny wygląd, dopasowany do otoczenia",
+      "Odpowiednia wentylacja dzięki zastosowaniu paneli ażurowych",
+      "Możliwość dopasowania wymiarów",
+      "Łatwy dostęp do pojemników z możliwością zamknięcia na klucz"
     ]
   },
   "nowoczesne-garaze": {
-    title: "Nowoczesne Garaże",
+    title: "Nowoczesne garaże",
     description:
       "Stylowe i trwałe nowoczesne garaże z profili zamkniętych ocynkowanych, które gwarantują odporność na warunki atmosferyczne.",
     content:
@@ -108,8 +108,8 @@ export default async function OfferPage({ params }) {
       title: "Okno",
       description:
         "W naszej ofercie znajdziesz okno uchylne o wymiarach 0,80 x 0,60 [m] lub okno typu FIX o wymiarach 0,40 x 1,80 [m] (nieuchylne) w dowolnej kolorystyce.",
-      image: "/images/oferta/okno1.jpeg",
-      image2: "/images/oferta/okno2.jpeg",
+      image: "/images/oferta/okno1.jpg",
+      image2: "/images/oferta/okno2.jpg",
     },
     {
       key: "filc_antykondensacyjny",
@@ -135,6 +135,14 @@ export default async function OfferPage({ params }) {
       image: "/images/oferta/blachodachówka1.jpeg",
       image2: "/images/oferta/blachodachówka2.jpeg",
     },
+    {
+      key: "automat",
+      title:"Automat",
+      description:`Automatyzacja bramy uchylnej umożliwia wygodne otwieranie i zamykanie bramy bez
+                  wychodzenia z samochodu. Dzięki nowoczesnym napędom, codzienne użytkowanie bramy staje się
+                  bardziej komfortowe i oszczędza czas.`,
+      image: "/images/oferta/automat.jpg",      
+    }
   ];
 
   // Filter accessories based on slug
@@ -146,7 +154,7 @@ export default async function OfferPage({ params }) {
   }
 
   return (
-    <div className="bg-gray-50 pb-16">
+    <div className="bg-gray-50 ">
       {/* Hero Section */}
       <HeroPages>
         <div className="bg-gradient-to-r from-sky-600/90 to-sky-500/80 rounded-lg shadow-xl max-w-5xl mx-auto p-8 md:p-12">
@@ -158,7 +166,7 @@ export default async function OfferPage({ params }) {
               <p className="text-white/90 text-sm md:text-base mb-6">
                 {offer.description}
               </p>
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg max-sm:hidden">
                 <p className="text-white/90 text-sm md:text-base">
                   {offer.content}
                 </p>
