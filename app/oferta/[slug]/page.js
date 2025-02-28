@@ -124,16 +124,16 @@ export default async function OfferPage({ params }) {
       title: "Rynny",
       description:
         "Nasze rynny w zestawie posiadają spusty, a ich kolorystyka jest dobierana do koloru dachu lub indywidualnych potrzeb Klienta. Wykonane są z wysokiej jakości PVC, zapewniają trwałość i odporność na warunki atmosferyczne. Montowane są ze spadkiem, co umożliwia skuteczne odprowadzanie wody. Możliwość skrócenia rynny pozwala na zbieranie deszczówki do zbiornika — praktyczne i ekologiczne rozwiązanie.",
-      image: "/images/oferta/rynny.jpeg",
-      image2: "/images/oferta/rynny2.jpeg",
+      image: "/images/oferta/rynny1.jpg",
+      image2: "/images/oferta/rynny2.jpg",
     },
     {
       key: "blachodachowka",
       title: "Blachodachówka",
       description:
         "Montaż blachodachówki to dwustopniowy proces. Najpierw montowana jest blacha trapezowa jako podstawa, a następnie do niej mocowana jest blachodachówka, co zapewnia estetyczny wygląd i dodatkową ochronę.",
-      image: "/images/oferta/blachodachówka1.jpeg",
-      image2: "/images/oferta/blachodachówka2.jpeg",
+      image: "/images/oferta/blachodachowka1.jpg",
+      image2: "/images/oferta/blachodachowka2.jpg",
     },
     {
       key: "automat",
@@ -141,7 +141,8 @@ export default async function OfferPage({ params }) {
       description:`Automatyzacja bramy uchylnej umożliwia wygodne otwieranie i zamykanie bramy bez
                   wychodzenia z samochodu. Dzięki nowoczesnym napędom, codzienne użytkowanie bramy staje się
                   bardziej komfortowe i oszczędza czas.`,
-      image: "/images/oferta/automat.jpg",      
+      image: "/images/oferta/automat1.jpg",      
+      image2: "/images/oferta/automat2.jpg",      
     }
   ];
 
