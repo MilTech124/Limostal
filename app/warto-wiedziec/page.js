@@ -30,7 +30,7 @@ function page() {
     <HeroPages title={"Warto wiedzieć"}/>
 
     {/*  TOP BLUE BAR */}
-    <div className='bg-sky-500 flex  w-full justify-center py-2 md:gap-5'>
+    <div className='bg-sky-500 flex  w-full justify-center py-2 md:gap-5 max-sm:hidden'>
       {links.map((link, index) => (
         <div key={index} className='flex items-center '>
           <Link href={link.path} className='text-white hover:text-sky-600 px-4 py-2 rounded-md text-sm font-medium'>{link.title}</Link>
