@@ -19,7 +19,9 @@ function Hero() {
   useEffect(() => {
     const getSlides = async () => {
       try {
-        const response = await axios.get(process.env.NEXT_PUBLIC_HOME);
+        // Use our internal API route instead of directly calling the WordPress API
+        // This avoids CORS issues since the request is made server-to-server
+        const response = await axios.get('/api/home-slides');
         console.log('Full API response:', response.data);
         
         if (response.data && response.data[0] && response.data[0].acf && response.data[0].acf.zdjecia) {

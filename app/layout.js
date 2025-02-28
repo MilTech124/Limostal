@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html
       lang="pl"
       className="scroll-smooth"
-      style={{ scrollBehavior: "smooth" }}
+      style={{ scrollBehavior: "smooth", width: "100vw", overflowX: "hidden" }}
     >
       <body className={inter.className + " relative"}>
         
